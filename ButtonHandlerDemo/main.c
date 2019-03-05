@@ -48,7 +48,7 @@ int main(void)
 	vDisplayClear();
 	vDisplayWriteStringAtPos(0,0,"FreeRTOS 10.0.1");
 	vDisplayWriteStringAtPos(1,0,"EDUBoard 1.0");
-	vDisplayWriteStringAtPos(2,0,"Template");
+	vDisplayWriteStringAtPos(2,0,"Button-DemoProgram");
 	vDisplayWriteStringAtPos(3,0,"ResetReason: %d", reason);
 	vTaskStartScheduler();
 	return 0;
@@ -58,7 +58,7 @@ void vButtonTask(void *pvParameters) {
 	initButtons();
 	vTaskDelay(3000);
 	vDisplayClear();
-	vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+	vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 	vDisplayWriteStringAtPos(1,0, "LastPress: None");
 	vDisplayWriteStringAtPos(2,0, "Type: Not Pressed");
 	for(;;) {
@@ -66,49 +66,49 @@ void vButtonTask(void *pvParameters) {
 		
 		if(getButtonPress(BUTTON1) == SHORT_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button1");
 			vDisplayWriteStringAtPos(2,0, "Type: Short");
 		}
 		if(getButtonPress(BUTTON2) == SHORT_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button2");
 			vDisplayWriteStringAtPos(2,0, "Type: Short");
 		}
 		if(getButtonPress(BUTTON3) == SHORT_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button3");
 			vDisplayWriteStringAtPos(2,0, "Type: Short");
 		}
 		if(getButtonPress(BUTTON4) == SHORT_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button4");
 			vDisplayWriteStringAtPos(2,0, "Type: Short");
 		}
 		if(getButtonPress(BUTTON1) == LONG_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button1");
 			vDisplayWriteStringAtPos(2,0, "Type: Long");
 		}
 		if(getButtonPress(BUTTON2) == LONG_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button2");
 			vDisplayWriteStringAtPos(2,0, "Type: Long");
 		}
 		if(getButtonPress(BUTTON3) == LONG_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button3");
 			vDisplayWriteStringAtPos(2,0, "Type: Long");
 		}
 		if(getButtonPress(BUTTON4) == LONG_PRESSED) {
 			vDisplayClear();
-			vDisplayWriteStringAtPos(0,0, "Button-Demoprogram");
+			vDisplayWriteStringAtPos(0,0, "Button-DemoProgram");
 			vDisplayWriteStringAtPos(1,0, "LastPress: Button4");
 			vDisplayWriteStringAtPos(2,0, "Type: Long");
 		}
