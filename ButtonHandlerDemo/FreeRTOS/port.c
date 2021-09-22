@@ -78,6 +78,8 @@
 #include "task.h"
 #include "stack_macros.h"
 
+#include <stdio.h>
+
 
 /*-----------------------------------------------------------
  * Implementation of functions defined in portable.h
@@ -422,7 +424,7 @@ static void prvSetupTimerInterrupt( void )
 
 	// Adjust for correct value. (because overflow clear if CNT > PER)
 	ulOvfMatch -= ( unsigned portLONG ) 1;
-
+	printf("%i", ulOvfMatch);
 	// Setup overflow value
 	TC_SetPeriod( &TCC0, ulOvfMatch);
 		
